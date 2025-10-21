@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import bgimg from '../assets/images2/login images 1.png';
+
 
 export default function SignUp() {
     const [formData, setFormData] = useState({
@@ -35,10 +37,13 @@ export default function SignUp() {
     };
 
     return (
-        <div className="min-h-screen bg-gray-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <>
+            <div className="min-h-screen bg-gray-50 flex items-center justify-around py-12 px-4 sm:px-6 lg:px-8"
+                style={{ backgroundImage: `url(${bgimg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div></div>
             <div className="max-w-md w-full space-y-8">
                 <div>
-                    <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Create Account</h2>
+                    <h2 className="mt-6 text-center text-3xl font-extrabold text-white">Create Account</h2>
                 </div>
 
                 {/* Flashed Messages (Alerts) - Uncommented and adapted */}
@@ -101,7 +106,7 @@ export default function SignUp() {
 
                     <div className="space-y-4">
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                            <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
                                 Email
                             </label>
                             <input
@@ -117,7 +122,7 @@ export default function SignUp() {
                         </div>
 
                         <div>
-                            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+                            <label htmlFor="password" className="block text-sm font-medium text-white mb-1">
                                 Password
                             </label>
                             <div className="relative">
@@ -154,32 +159,39 @@ export default function SignUp() {
                         </div>
 
                         <div>
-                            <p className="text-sm font-medium text-gray-700 mb-2">What are you registering as?</p>
-                            <div className="flex flex-wrap gap-4">
+                            <p className="text-sm font-medium text-white mb-2">What are you registering as?</p>
+                            <div className="flex flex-wrap gap-4 ">
                                 {[
                                     { value: 'doctor', label: 'Doctor' },
                                     { value: 'patient', label: 'Patient' },
                                     { value: 'volunteer', label: 'Volunteer' },
                                 ].map(({ value, label }) => (
-                                    <label key={value} className="flex items-center">
+                                    <label key={value} className="flex items-center ">
                                         <input
                                             type="radio"
                                             name="role"
                                             value={value}
                                             checked={formData.role === value}
                                             onChange={handleInputChange}
-                                            className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300"
+                                            className="h-4 w-4 text-white focus:ring-indigo-500 border-gray-300 "
                                         />
-                                        <span className="ml-2 text-sm text-gray-900">{label}</span>
+                                        <span className="ml-2 text-sm text-white">{label}</span>
                                     </label>
                                 ))}
                             </div>
                         </div>
-                    </div>
+                        </div>
+                         <div className="text-center">
+            <Link to="/signin" className="text-sm text-white  hover:text-blue-500">
+              Login existing account
+            </Link>
+          </div>
                 </form>
                 
         
             </div>
         </div>
+        
+        </>
     )
 }

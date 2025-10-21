@@ -10,6 +10,9 @@ import Service from './components/Service';
 import Telemed from './components/Telemed';
 import Footer from './components/Footer';
 import More from './components/More';
+import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';  // Import AOS styles
@@ -41,6 +44,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/telemed" element={<Telemed />} />
         <Route path="/more" element={<More />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signin" element={<SignIn />} />
        
         
         </Routes>

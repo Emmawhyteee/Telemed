@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img1 from '../assets/images2/image 22.webp';
 import img2 from '../assets/images2/Frame 584_3.webp';
 import img3 from '../assets/images2/help homeless.webp';
@@ -23,12 +24,12 @@ function Telemed() {
             <p className="mb-6 text-lg text-gray-700">
               Securely share your comprehensive medical history with <br /> your doctors for better communication and care
             </p>
-            <a
-              href="./SignUp"
+            <Link
+              to="/SignUp"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
             >
               Book An Appointment
-            </a>
+            </Link>
           </div>
 
           <div className="md:w-1/2 flex justify-center items-center">
@@ -97,7 +98,7 @@ function Telemed() {
               Good health is mental, physical, and social wellbeing, not just the absence of diseases. It includes strong connection and quick access to support.
             </p>
             <a
-              href="#"
+              href="/signup"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
             >
               Search Doctor
@@ -119,7 +120,7 @@ function Telemed() {
               Good health is mental, physical, and social wellbeing, not just the absence of diseases. It includes strong connection and quick access to support.
             </p>
             <a
-              href="#"
+              href="signup"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
             >
               Book An Appointment
@@ -167,7 +168,7 @@ function Telemed() {
               Get the best, receive top-notch medical care from the finest doctors available
             </p>
             <a
-              href="#"
+              href="signup"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition text-center"
             >
               Get Started
