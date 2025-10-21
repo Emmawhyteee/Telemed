@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'; // For any links
 import partnerImg from '../assets/images2/partner.webp'; // Adjust path as needed
-import handsHelpingIcon from '../assets/images2/hands-helping.svg'; // Placeholder for icon
-import handHoldingUsdIcon from '../assets/images2/hand-holding-usd.svg'; // Placeholder
-import peopleCarryIcon from '../assets/images2/people-carry.svg'; // Placeholder
+import handsHelpingIcon from '../assets/images2/hand.webp'; // Placeholder for icon
+import handHoldingUsdIcon from '../assets/images2/image-222.png'; // Placeholder
+import peopleCarryIcon from '../assets/images2/image-222.png'; // Placeholder
 
 export default function PartnerInclude() {
   const [formData, setFormData] = useState({
