@@ -97,12 +97,12 @@ function Telemed() {
             <p className="mb-6 text-gray-700 leading-relaxed">
               Good health is mental, physical, and social wellbeing, not just the absence of diseases. It includes strong connection and quick access to support.
             </p>
-            <a
-              href="/SignUp"
+            <Link
+              to="/SignUp"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
             >
               Search Doctor
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -119,12 +119,12 @@ function Telemed() {
             <p className="mb-6 text-gray-700 leading-relaxed">
               Good health is mental, physical, and social wellbeing, not just the absence of diseases. It includes strong connection and quick access to support.
             </p>
-            <a
-              href="/SignUp"
+            <Link
+              to="/SignUp"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
             >
               Book An Appointment
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -167,12 +167,12 @@ function Telemed() {
             <p className="mb-6 text-gray-700">
               Get the best, receive top-notch medical care from the finest doctors available
             </p>
-            <a
-              href="/SignUp"
+            <Link
+              to="/SignUp"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition text-center"
             >
               Get Started
-            </a>
+            </Link>
           </div>
         </div>
       </section>
