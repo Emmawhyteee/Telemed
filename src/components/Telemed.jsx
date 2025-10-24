@@ -98,7 +98,7 @@ function Telemed() {
               Good health is mental, physical, and social wellbeing, not just the absence of diseases. It includes strong connection and quick access to support.
             </p>
             <a
-              href="/signup"
+              href="/SignUp"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
             >
               Search Doctor
@@ -120,7 +120,7 @@ function Telemed() {
               Good health is mental, physical, and social wellbeing, not just the absence of diseases. It includes strong connection and quick access to support.
             </p>
             <a
-              href="signup"
+              href="/SignUp"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition"
             >
               Book An Appointment
@@ -168,7 +168,7 @@ function Telemed() {
               Get the best, receive top-notch medical care from the finest doctors available
             </p>
             <a
-              href="signup"
+              href="/SignUp"
               className="inline-block bg-blue-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-500 transition text-center"
             >
               Get Started
