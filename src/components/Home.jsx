@@ -40,14 +40,20 @@ function Home() {
           <p className="text-base sm:text-lg mb-12">A little bit about who we are and what we do.</p>
 
           <div className="flex flex-col md:flex-row items-center gap-10">
-            <div className="md:w-1/2" data-aos="fade-right">
+            <div
+              className="md:w-1/2"
+              data-aos={typeof window !== 'undefined' && window.innerWidth >= 1024 ? 'fade-right' : 'fade-up'}
+            >
               <img
                 src={frame706}
                 alt="About Us"
-                className="rounded-lg  w-full"
+                className="rounded-lg w-full"
               />
             </div>
-            <div className="md:w-1/2 text-left" data-aos="fade-left">
+            <div
+              className="md:w-1/2 text-left"
+              data-aos={typeof window !== 'undefined' && window.innerWidth >= 1024 ? 'fade-left' : 'fade-up'}
+            >
               <h3 className="text-blue-400 text-xl sm:text-2xl font-semibold mb-4">
                 Welcome to Global Health Reform Initiatives
               </h3>
