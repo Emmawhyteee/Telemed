@@ -355,7 +355,7 @@ export default function Navbar() {
 
             <li>
               <Link
-                to="/get_involved"
+                to="/getinvolved"
                 className="block px-3 py-2 text-gray-700 hover:bg-indigo-100 rounded"
                 onClick={() => setMobileMenuOpen(false)}
               >

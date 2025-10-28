@@ -93,17 +93,17 @@ export default function DonateInclude() {
                 <h4 className="text-2xl font-semibold text-gray-900 mb-4">Why we need people</h4>
             </div>
 
-            {/* How to Donate */}
-            <div className="container my-5">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Donate</h2>
-                <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li>Proin egestas urna eu mauris ultricies, ac facilisis nunc viverra.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                </ul>
-            </div>
+           { /* How to Donate */}
+                        <div className="container my-5">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Donate</h2>
+                            <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Choose an amount and select whether this is a one-time or recurring donation.</li>
+                                <li>Provide your contact details so we can send a receipt and updates on our projects.</li>
+                                <li>Enter secure payment information, review your donation, and submit to complete the process.</li>
+                            </ul>
+                        </div>
 
-            {/* Donation Form */}
+                        {/* Donation Form */}
             <div className="row justify-content-center mt-5">
                 <div className="col-lg-6">
                     <div className="donation-form bg-light p-6 rounded-lg shadow-md mx-5 my-5">

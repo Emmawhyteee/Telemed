@@ -1,9 +1,6 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom'; // For any internal links
 import getInvolvedImg from '../assets/images2/Frame 705.webp'; // Adjust path as needed
-import missionIcon from '../assets/images2/mission.svg'; // If used elsewhere, but not in this file
-// Import sub-components if they exist
-import DonateInclude from './DonateInclude'; // Placeholder for your include
+import DonateInclude from './DonateInclude'; // Placeholder for your include component
 import VolunteerInclude from './VolunteerInclude';
 import PartnerInclude from './PartnerInclude';
 
@@ -17,13 +14,23 @@ export default function GetInvolved() {
   return (
     <div className="body-involved min-h-screen bg-white">
       {/* Header */}
-      <header className="hero-involved bg-gray-100 py-16 text-center">
-        <h1 className="text-4xl font-bold text-gray-900">Get Involved</h1>
+      <header
+        className="hero-involved relative bg-cover bg-center py-24 mb-5"
+        style={{ backgroundImage: `url(${getInvolvedImg})` }}
+      >
+        {/* dark overlay */}
+        <div className="absolute inset-0 bg-black opacity-60" />
+
+        {/* content above overlay */}
+        <div className="relative z-10 text-center text-white px-4">
+          <h1 className="text-4xl font-bold">Get Involved</h1>
+          <p className="mt-2 max-w-2xl mx-auto">Join GHRI’s projects and make a difference.</p>
+        </div>
       </header>
 
       <div className="container mx-auto px-4 my-10 mt-10">
-        {/* Our Story Section */}
-        <div className="grid md:grid-cols-2 gap-8 items-center mb-10">
+        {/* Image and Text Section */ }
+        <div className="grid md:grid-cols-2 gap-8 mb-10">
           <div>
             <img
               src={getInvolvedImg}
@@ -32,23 +39,25 @@ export default function GetInvolved() {
             />
           </div>
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Get Involved in <span className="fw-bold text-blue-600">GHRI’s projects</span>
+            <h2 className="text-4xl font-bold text-gray-900 mt-5">
+              Why Get Involved in <span className="font-semibold text-blue-600">GHRI’s projects</span>
             </h2>
-            <p className="text-gray-700 leading-relaxed">
-              Lorem ipsum dolor sit amet, consecteturlor sit amet, consecteturlor sit amet, consecteturlor sit amet, consecteturlor sit amet,
-              consecteturlor sit amet, consectetur adipiscing elit. Proin egestas urna eu mauris ultricies, ac facilisis nunc viverra.
+            <p className="text-gray-700 leading-relaxed mt-4">
+              By supporting GHRI, you help deliver essential medical care, expand community health education,
+              and strengthen local clinics. Whether you donate, volunteer, or partner with us, your contribution
+              helps increase access to care, build long-term capacity, and improve health outcomes for
+              underserved communities.
             </p>
           </div>
         </div>
 
         {/* How it Helps Us Section */}
         <div className="mb-10">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-4">How it helps us</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-4">Impact of Your Support</h3>
           <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Proin egestas urna eu mauris ultricies, ac facilisis nunc viverra.</li>
-            <li>Proin egestas urna eu mauris ultricies, ac facilisis nunc viverra.</li>
+            <li>Donations fund patient care, medical supplies, and community health programs.</li>
+            <li>Volunteer time expands outreach, health education, and on-the-ground services.</li>
+            <li>Partnerships strengthen infrastructure, training, and long-term sustainability.</li>
           </ul>
         </div>
 
@@ -75,7 +84,7 @@ export default function GetInvolved() {
             </div>
 
             {/* Volunteer Accordion */}
-            <div className="border rounded-lg overflow-hidden">
+            <div className="border rounded-lg overflow-hidden my-5">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button w-full text-left p-4 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -93,7 +102,7 @@ export default function GetInvolved() {
             </div>
 
             {/* Partner Accordion */}
-            <div className="border rounded-lg overflow-hidden">
+            <div className="border rounded-lg overflow-hidden my-5">
               <h2 className="accordion-header">
                 <button
                   className="accordion-button w-full text-left p-4 bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"

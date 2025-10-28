@@ -83,14 +83,12 @@ export default function VolunteerInclude() {
         <div className="container my-5">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">How to Volunteer</h2>
           <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Proin egestas urna eu mauris ultricies, ac facilisis nunc viverra.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Proin egestas urna eu mauris ultricies, ac facilisis nunc viverra.</li>
+            <li>Complete the sign-up form and tell us about your skills and availability.</li>
+            <li>Attend a short orientation to learn our mission, policies, and safety procedures.</li>
+            <li>Get matched with opportunities that fit your experience — clinical, administrative, or outreach.</li>
+            <li>Start volunteering on scheduled shifts and receive ongoing support and training.</li>
           </ul>
         </div>
-
-        {/* Volunteer Form */}
         <section className="volunteer-form mx-3 py-5 bg-blue-600 text-white">
           <h2 className="text-center text-2xl font-bold mb-4">Sign Up</h2>
           <p className="text-center mb-6">For more enquiries... you can send us a direct message and we would respond promptly.</p>

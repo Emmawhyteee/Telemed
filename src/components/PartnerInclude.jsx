@@ -51,7 +51,7 @@ export default function PartnerInclude() {
         </div>
 
         {/* How it Helps Us Section */}
-        <div className="d-flex justify-content-around align-items-center text-center space-y-6 md:space-y-0 md:space-x-8 mb-10">
+        <div className="flex justify-content-around align-items-center text-center space-y-6 md:space-y-0 md:space-x-8 mb-10">
           <div className="step flex-1">
             <img src={handsHelpingIcon} alt="Hands Helping Icon" className="w-12 h-12 mx-auto mb-4" />
             <h5 className="text-xl font-semibold text-gray-900">To Help</h5>
@@ -77,11 +77,11 @@ export default function PartnerInclude() {
 
         {/* Why We Need People Section */}
         <div className="mb-10">
-          <h4 className="text-2xl font-semibold text-center text-gray-900 mb-4">Why we need people</h4>
+          <h4 className="text-2xl font-semibold text-center text-gray-900 mb-4">Why we need partners</h4>
           <ul className="list-disc pl-5 space-y-2 text-gray-700 text-left max-w-md mx-auto">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Proin egestas urna eu mauris ultricies, ac facilisis nunc viverra.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Expand access to quality healthcare by funding and supporting new clinics and hospitals in underserved communities.</li>
+            <li>Contribute expertise, volunteers, and operational support to improve patient care and build local capacity.</li>
+            <li>Partner on sustainable initiatives—training, technology, and outreach—that deliver measurable, long‑term impact.</li>
           </ul>
         </div>
 
